@@ -48,3 +48,9 @@
 
 // console.table([2+3+"2"])
 // 52
+
+
+
+// console.table([+"", +true])
+// 0
+// 1
