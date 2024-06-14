@@ -54,3 +54,20 @@
 // console.table([+"", +true])
 // 0
 // 1
+
+
+// console.table([null>0,null==0,null>=0])
+// becoz when there is == equality check there is no conversion i.e null is compared to 0 
+// whereas in comparsion <> ,> ,<, >=,<= null is converted to number which is 0 
+// false false true
+
+
+// console.table([undefined>0,undefined==0,undefined>=0])
+// all are false becoz undefined is there is no value assigned
+
+
+
+// strict check ===
+
+// console.table(['22'==22,'22'===22])
+// === checks the datatype too
