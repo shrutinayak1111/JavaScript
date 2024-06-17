@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    // function addlang(lang){
+    //    const li= document.createElement('li');
+    //    li.innerHTML=`${lang}`
+    //    document.querySelector('.language').appendChild(li)
+    // }
+    // addlang('python')
+    // addlang('linux')
+    // addlang('ruby')
+
+    //OPTIMISED
+function optiLang(lang){
+    const li=document.createElement('li')
+    li.append(document.createTextNode(lang))
+    document.querySelector('.language').appendChild(li)
+}
+optiLang('python')
+    optiLang('linux')
+    optiLang('ruby')
+
+
+    //EDIT
+// const secondLang=document.querySelector('li:nth-child(2)')
+// secondLang.innerHTML='MOJO'
+// const newLi=document.createElement('li')
+// newLi.textContent='mojo'
+// secondLang.replaceWith(newLi)
+
+// const firstLang=document.querySelector('li:nth-child(1)')
+// const newLi=document.createElement('li')
+// newLi.innerHTML='goLang'
+// firstLang.replaceWith(newLi)
+
+
+//REMOVE
+const lastLang=document.querySelector('li:last-child')
+lastLang.remove()
+</script>
+</html>
